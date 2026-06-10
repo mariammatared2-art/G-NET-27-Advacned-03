@@ -38,42 +38,42 @@
 
             #region Exercise 2
            
-                Console.WriteLine("--- Exercise 2: Leaderboard ---");
+                //Console.WriteLine("--- Exercise 2: Leaderboard ---");
 
-                SortedList<int, string> leaderboard = new SortedList<int, string>(Comparer<int>.Create((x, y) => y.CompareTo(x)));
+                //SortedList<int, string> leaderboard = new SortedList<int, string>(Comparer<int>.Create((x, y) => y.CompareTo(x)));
 
-                leaderboard.Add(500, "Ahmed");
-                leaderboard.Add(200, "Sara");
-                leaderboard.Add(800, "Ali");
-                leaderboard.Add(350, "Mona");
+                //leaderboard.Add(500, "Ahmed");
+                //leaderboard.Add(200, "Sara");
+                //leaderboard.Add(800, "Ali");
+                //leaderboard.Add(350, "Mona");
 
-                Console.WriteLine("Leaderboard Entries:");
-                foreach (KeyValuePair<int, string> entry in leaderboard)
-                {
-                    Console.WriteLine($"Score: {entry.Key} -> Player: {entry.Value}");
-                }
+                //Console.WriteLine("Leaderboard Entries:");
+                //foreach (KeyValuePair<int, string> entry in leaderboard)
+                //{
+                //    Console.WriteLine($"Score: {entry.Key} -> Player: {entry.Value}");
+                //}
 
-                Console.WriteLine($"First Key (Highest Score): {leaderboard.Keys[0]}");
-                Console.WriteLine($"First Value (Top Player): {leaderboard.Values[0]}");
+                //Console.WriteLine($"First Key (Highest Score): {leaderboard.Keys[0]}");
+                //Console.WriteLine($"First Value (Top Player): {leaderboard.Values[0]}");
 
-                Console.WriteLine($"Does score 500 exist?: {leaderboard.ContainsKey(500)}");
+                //Console.WriteLine($"Does score 500 exist?: {leaderboard.ContainsKey(500)}");
 
-                if (leaderboard.TryGetValue(999, out string player))
-                {
-                    Console.WriteLine($"Player with 999: {player}");
-                }
-                else
-                {
-                    Console.WriteLine("Player with score 999 not found.");
-                }
+                //if (leaderboard.TryGetValue(999, out string player))
+                //{
+                //    Console.WriteLine($"Player with 999: {player}");
+                //}
+                //else
+                //{
+                //    Console.WriteLine("Player with score 999 not found.");
+                //}
 
-                leaderboard.Remove(200);
-                Console.WriteLine("Updated Leaderboard after removing score 200:");
-                foreach (var entry in leaderboard)
-                {
-                    Console.WriteLine($"Score: {entry.Key} -> Player: {entry.Value}");
-                }
-                Console.WriteLine();
+                //leaderboard.Remove(200);
+                //Console.WriteLine("Updated Leaderboard after removing score 200:");
+                //foreach (var entry in leaderboard)
+                //{
+                //    Console.WriteLine($"Score: {entry.Key} -> Player: {entry.Value}");
+                //}
+                //Console.WriteLine();
             
             #endregion
 
