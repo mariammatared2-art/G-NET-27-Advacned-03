@@ -79,39 +79,39 @@
 
             #region Exercise 3
           
-                Console.WriteLine("--- Exercise 3: Phone Book ---");
+        //        Console.WriteLine("--- Exercise 3: Phone Book ---");
 
-                Dictionary<string, string> phoneBook = new Dictionary<string, string>
-        {
-            { "John", "123-456" },
-            { "Jane", "987-654" },
-            { "Bob", "555-789" },
-            { "Alice", "444-111" }
-        };
+        //        Dictionary<string, string> phoneBook = new Dictionary<string, string>
+        //{
+        //    { "John", "123-456" },
+        //    { "Jane", "987-654" },
+        //    { "Bob", "555-789" },
+        //    { "Alice", "444-111" }
+        //};
 
-                phoneBook["Charlie"] = "222-333";
+        //        phoneBook["Charlie"] = "222-333";
 
-                try
-                {
-                    phoneBook.Add("John", "000-000");
-                }
-                catch (ArgumentException ex)
-                {
-                    Console.WriteLine($"[Exception caught] Cannot add duplicate key: {ex.Message}");
-                }
+        //        try
+        //        {
+        //            phoneBook.Add("John", "000-000");
+        //        }
+        //        catch (ArgumentException ex)
+        //        {
+        //            Console.WriteLine($"[Exception caught] Cannot add duplicate key: {ex.Message}");
+        //        }
 
-                bool isAdded = phoneBook.TryAdd("John", "999-999");
-                Console.WriteLine($".TryAdd() duplicate succeeded?: {isAdded}");
+        //        bool isAdded = phoneBook.TryAdd("John", "999-999");
+        //        Console.WriteLine($".TryAdd() duplicate succeeded?: {isAdded}");
 
-                Console.WriteLine($"Does 'Sam' exist?: {phoneBook.ContainsKey("Sam")}");
+        //        Console.WriteLine($"Does 'Sam' exist?: {phoneBook.ContainsKey("Sam")}");
 
-                string contactName = "Sam";
-                string phoneNumber = phoneBook.TryGetValue(contactName, out string num) ? num : "Not Found";
-                Console.WriteLine($"Phone for {contactName}: {phoneNumber}");
+        //        string contactName = "Sam";
+        //        string phoneNumber = phoneBook.TryGetValue(contactName, out string num) ? num : "Not Found";
+        //        Console.WriteLine($"Phone for {contactName}: {phoneNumber}");
 
-                Console.WriteLine("Keys: " + string.Join(", ", phoneBook.Keys));
-                Console.WriteLine("Values: " + string.Join(", ", phoneBook.Values));
-                Console.WriteLine();
+        //        Console.WriteLine("Keys: " + string.Join(", ", phoneBook.Keys));
+        //        Console.WriteLine("Values: " + string.Join(", ", phoneBook.Values));
+        //        Console.WriteLine();
             
             #endregion
 
