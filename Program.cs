@@ -183,34 +183,34 @@
 
             #region Exercise 6
            
-                Console.WriteLine("--- Exercise 6: Browser History (Undo) ---");
+                //Console.WriteLine("--- Exercise 6: Browser History (Undo) ---");
 
-                Stack<string> browserHistory = new Stack<string>();
+                //Stack<string> browserHistory = new Stack<string>();
 
-                browserHistory.Push("google.com");
-                browserHistory.Push("github.com");
-                browserHistory.Push("stackoverflow.com");
-                browserHistory.Push("youtube.com");
-                browserHistory.Push("claude.ai");
+                //browserHistory.Push("google.com");
+                //browserHistory.Push("github.com");
+                //browserHistory.Push("stackoverflow.com");
+                //browserHistory.Push("youtube.com");
+                //browserHistory.Push("claude.ai");
 
-                Console.WriteLine($"Current top page (Peek): {browserHistory.Peek()}");
+                //Console.WriteLine($"Current top page (Peek): {browserHistory.Peek()}");
 
-                for (int i = 0; i < 3; i++)
-                {
-                    string leftPage = browserHistory.Pop();
-                    Console.WriteLine($"Left page: {leftPage}");
-                }
+                //for (int i = 0; i < 3; i++)
+                //{
+                //    string leftPage = browserHistory.Pop();
+                //    Console.WriteLine($"Left page: {leftPage}");
+                //}
 
-                Console.WriteLine($"Current page after navigating back: {browserHistory.Peek()}");
+                //Console.WriteLine($"Current page after navigating back: {browserHistory.Peek()}");
 
-                browserHistory.Pop();
-                browserHistory.Pop();
+                //browserHistory.Pop();
+                //browserHistory.Pop();
 
-                bool popSuccess = browserHistory.TryPop(out string emptyResult);
-                Console.WriteLine($"TryPop on empty stack succeeded?: {popSuccess}");
-                Console.WriteLine($"Result returned: {(emptyResult ?? "null")}");
-                Console.WriteLine("Explanation: TryPop returns false safely rather than crashing the application with an exception.");
-                Console.WriteLine();
+                //bool popSuccess = browserHistory.TryPop(out string emptyResult);
+                //Console.WriteLine($"TryPop on empty stack succeeded?: {popSuccess}");
+                //Console.WriteLine($"Result returned: {(emptyResult ?? "null")}");
+                //Console.WriteLine("Explanation: TryPop returns false safely rather than crashing the application with an exception.");
+                //Console.WriteLine();
             
             #endregion
 
