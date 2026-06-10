@@ -153,31 +153,31 @@
 
             #region Exercise 5
             
-                Console.WriteLine("--- Exercise 5: Print Queue Simulator ---");
+                //Console.WriteLine("--- Exercise 5: Print Queue Simulator ---");
 
-                Queue<string> printerQueue = new Queue<string>();
-                printerQueue.Enqueue("Report.pdf");
-                printerQueue.Enqueue("Invoice.pdf");
-                printerQueue.Enqueue("Letter.docx");
-                printerQueue.Enqueue("Resume.pdf");
-                printerQueue.Enqueue("Photo.jpg");
+                //Queue<string> printerQueue = new Queue<string>();
+                //printerQueue.Enqueue("Report.pdf");
+                //printerQueue.Enqueue("Invoice.pdf");
+                //printerQueue.Enqueue("Letter.docx");
+                //printerQueue.Enqueue("Resume.pdf");
+                //printerQueue.Enqueue("Photo.jpg");
 
-                Console.WriteLine($"Queue contents: {string.Join(", ", printerQueue)}");
-                Console.WriteLine($"Queue Count: {printerQueue.Count}");
+                //Console.WriteLine($"Queue contents: {string.Join(", ", printerQueue)}");
+                //Console.WriteLine($"Queue Count: {printerQueue.Count}");
 
-                Console.WriteLine($"Next document to print (Peek): {printerQueue.Peek()}");
+                //Console.WriteLine($"Next document to print (Peek): {printerQueue.Peek()}");
 
-                while (printerQueue.Count > 0)
-                {
-                    string currentDoc = printerQueue.Dequeue();
-                    Console.WriteLine($"Printing: {currentDoc}");
-                }
+                //while (printerQueue.Count > 0)
+                //{
+                //    string currentDoc = printerQueue.Dequeue();
+                //    Console.WriteLine($"Printing: {currentDoc}");
+                //}
 
-                bool dequeueSuccess = printerQueue.TryDequeue(out string emptyResult);
-                Console.WriteLine($"TryDequeue on empty queue succeeded?: {dequeueSuccess}");
-                Console.WriteLine($"Result returned: {(emptyResult ?? "null")}");
-                Console.WriteLine("Explanation: TryDequeue returns false instead of throwing an InvalidOperationException.");
-                Console.WriteLine();
+                //bool dequeueSuccess = printerQueue.TryDequeue(out string emptyResult);
+                //Console.WriteLine($"TryDequeue on empty queue succeeded?: {dequeueSuccess}");
+                //Console.WriteLine($"Result returned: {(emptyResult ?? "null")}");
+                //Console.WriteLine("Explanation: TryDequeue returns false instead of throwing an InvalidOperationException.");
+                //Console.WriteLine();
             
             #endregion
 
