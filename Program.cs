@@ -117,37 +117,37 @@
 
             #region Exercise 4
             
-                Console.WriteLine("--- Exercise 4: Unique Email Validator ---");
+                //Console.WriteLine("--- Exercise 4: Unique Email Validator ---");
 
-                HashSet<string> emails = new HashSet<string>(StringComparer.OrdinalIgnoreCase);
+                //HashSet<string> emails = new HashSet<string>(StringComparer.OrdinalIgnoreCase);
 
-                emails.Add("ahmed@test.com");
-                emails.Add("AHMED@test.com");
-                emails.Add("sara@test.com");
-                emails.Add("Sara@Test.Com");
+                //emails.Add("ahmed@test.com");
+                //emails.Add("AHMED@test.com");
+                //emails.Add("sara@test.com");
+                //emails.Add("Sara@Test.Com");
 
-                Console.WriteLine($"Stored Emails Count: {emails.Count}");
-                Console.WriteLine("Explanation: The count is 2 because StringComparer.OrdinalIgnoreCase makes the collection " +
-                                  "treat uppercase and lowercase letters as identical. Duplicate emails were rejected.");
+                //Console.WriteLine($"Stored Emails Count: {emails.Count}");
+                //Console.WriteLine("Explanation: The count is 2 because StringComparer.OrdinalIgnoreCase makes the collection " +
+                //                  "treat uppercase and lowercase letters as identical. Duplicate emails were rejected.");
 
-                HashSet<int> setA = new HashSet<int> { 1, 2, 3, 4, 5 };
-                HashSet<int> setB = new HashSet<int> { 4, 5, 6, 7, 8 };
+                //HashSet<int> setA = new HashSet<int> { 1, 2, 3, 4, 5 };
+                //HashSet<int> setB = new HashSet<int> { 4, 5, 6, 7, 8 };
 
-                HashSet<int> unionSet = new HashSet<int>(setA);
-                unionSet.UnionWith(setB);
-                Console.WriteLine($"UnionWith: {{{string.Join(", ", unionSet)}}}");
+                //HashSet<int> unionSet = new HashSet<int>(setA);
+                //unionSet.UnionWith(setB);
+                //Console.WriteLine($"UnionWith: {{{string.Join(", ", unionSet)}}}");
 
-                HashSet<int> intersectSet = new HashSet<int>(setA);
-                intersectSet.IntersectWith(setB); 
-                Console.WriteLine($"IntersectWith: {{{string.Join(", ", intersectSet)}}}");
+                //HashSet<int> intersectSet = new HashSet<int>(setA);
+                //intersectSet.IntersectWith(setB); 
+                //Console.WriteLine($"IntersectWith: {{{string.Join(", ", intersectSet)}}}");
 
-                HashSet<int> exceptSet = new HashSet<int>(setA);
-                exceptSet.ExceptWith(setB); 
-                Console.WriteLine($"ExceptWith (Set A except Set B): {{{string.Join(", ", exceptSet)}}}");
+                //HashSet<int> exceptSet = new HashSet<int>(setA);
+                //exceptSet.ExceptWith(setB); 
+                //Console.WriteLine($"ExceptWith (Set A except Set B): {{{string.Join(", ", exceptSet)}}}");
 
-                HashSet<int> subsetCheck = new HashSet<int> { 1, 2 };
-                Console.WriteLine($"Is {{1,2}} a subset of Set A?: {subsetCheck.IsSubsetOf(setA)}");
-                Console.WriteLine();
+                //HashSet<int> subsetCheck = new HashSet<int> { 1, 2 };
+                //Console.WriteLine($"Is {{1,2}} a subset of Set A?: {subsetCheck.IsSubsetOf(setA)}");
+                //Console.WriteLine();
             
             #endregion
 
